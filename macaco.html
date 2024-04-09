@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macacos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        h1, h3 {
+            text-align: center;
+        }
+        .gallery {
+            text-align: center; /* Alinha a lista ao centro */
+            padding: 20px;
+        }
+        .gallery-item {
+            display: inline-block; /* Exibe os itens da galeria em linha */
+            margin: 10px;
+            list-style: none;
+        }
+        .gallery-item img {
+            display: block;
+            width: 300px;
+            height: 300px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Macacos</h1>
+    <h3> Clique na imagem e conheça: </h3>
+    <ul class="gallery">
+        <li class="gallery-item">
+            <a href="https://www.youtube.com/watch?v=O4NJvWpmNJU" target="_blank"> 
+                <img src="https://img.odcdn.com.br/wp-content/uploads/2019/12/20191216073318.jpg" 
+                alt="Chimpanze"/>               
+            </a>
+            <aside>Chimpanze</aside> 
+        </li>
+        <p></p>
+        <li class="gallery-item">
+            <a href="https://www.youtube.com/watch?v=vO-7MZFXJpw" target="_blank"> 
+                <img src="https://sdzwildlifeexplorers.org/sites/default/files/2018-07/animal-hero-hamadryas_0.jpg" 
+                alt="Babuino"/>                
+            </a>
+            <aside>Babuino</aside> 
+        </li>
+        <p></p>
+        <li class="gallery-item">
+            <a href="https://www.youtube.com/watch?v=NdE7bANJIz0" target="_blank"> 
+                <img src="https://i.natgeofe.com/n/abf58ec8-ac78-4108-adbe-918fa5bda2e5/mountain-gorilla_3x4.jpg" 
+                alt="Gorila"/>                
+            </a>
+            <aside>Gorila</aside> 
+        </li>
+        <p></p>
+        <li class="gallery-item">
+            <a href="https://www.youtube.com/watch?v=0fts6x_EE_E" target="_blank"> 
+                <img src="https://images.theconversation.com/files/225151/original/file-20180627-112641-idgmo2.jpg?ixlib=rb-1.1.0&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip" 
+                alt="Orangotango"/>                
+            </a>
+            <aside>Orangotango</aside> 
+        </li>
+        <p></p>
+        <li class="gallery-item">
+            <a href="https://www.youtube.com/watch?v=CcVGst_aG2Q" target="_blank"> 
+                <img src="https://img.freepik.com/fotos-premium/gibao-de-bochechas-brancas-do-norte_70718-416.jpg" 
+                alt="Gibao"/>                
+            </a>
+            <aside>Gibao</aside> 
+        </li>
+    </ul>
+
+    <script>
+        function abrirVideo(videoUrl) {
+            window.location.href = videoUrl;
+        }
+    </script>
+
+<footer>
+    <p>© 2024 Macacos SA. Todos os direitos reservados.</p>
+    <nav>
+        <ul>
+            <li><a href="/sobre">Sobre nós</a></li>
+            <li><a href="/contato">Contato</a></li>
+            <li><a href="/politica-de-privacidade">Política de Privacidade</a></li>
+        </ul>
+    </nav>
+    <address>
+        Contato: <a href="macacos@gmail.com">macacos@gmail.com</a>
+    </address>
+</footer>
+
+</body>
+</html>
