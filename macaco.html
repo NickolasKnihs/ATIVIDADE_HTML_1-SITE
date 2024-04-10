@@ -3,96 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Macacos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        h1, h3 {
-            text-align: center;
-        }
-        .gallery {
-            text-align: center; /* Alinha a lista ao centro */
-            padding: 20px;
-        }
-        .gallery-item {
-            display: inline-block; /* Exibe os itens da galeria em linha */
-            margin: 10px;
-            list-style: none;
-        }
-        .gallery-item img {
-            display: block;
-            width: 400px;
-            height: 400px;
-            cursor: pointer;
-            transition: transform 0.3s ease-in-out;
-        }
-        .gallery-item img:hover {
-            transform: scale(1.1);
-        }
-    </style>
+    <title>MACACOS</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Macacos</h1>
-    <h3> Clique na imagem e conheça: </h3>
+    <h1 style="color: brown; font-size: 60px;">MACACOS</h1>
+    <h3 style="text-decoration: underline;"> Clique na imagem e conheça: </h3>
     <ul class="gallery">
         <li class="gallery-item">
             <a href="https://www.youtube.com/watch?v=O4NJvWpmNJU" target="_blank"> 
                 <img src="https://img.odcdn.com.br/wp-content/uploads/2019/12/20191216073318.jpg" 
                 alt="Chimpanze"/>               
             </a>
-            <aside>Chimpanze</aside> 
+            <aside id="nome">Chimpanze</aside> 
         </li>
-        <p></p>
+            <p id="descricao">O macaco chimpanzé, cientificamente conhecido como Pan troglodytes, é uma 
+                espécie de primata pertencente à família dos hominídeos. Originário da África central e 
+                ocidental, o chimpanzé é reconhecido por sua inteligência excepcional, habilidades sociais 
+                complexas e comportamentos fascinantes. Com uma dieta predominantemente vegetariana, esses 
+                primatas também se alimentam ocasionalmente de insetos e pequenos animais. Com sua estrutura 
+                física ágil e membros longos, os chimpanzés passam grande parte do tempo em árvores, onde 
+                constroem ninhos para descanso e proteção. Altamente sociáveis, vivem em grupos liderados 
+                por um macho dominante, onde estabelecem laços sociais, demonstram empatia e até mesmo 
+                desenvolvem formas rudimentares de cultura, como ferramentas de uso cotidiano. Infelizmente, 
+                o chimpanzé enfrenta ameaças significativas devido à destruição do habitat, caça ilegal e 
+                doenças transmitidas pelos humanos. Como primatas tão próximos de nós em termos genéticos, 
+                a preservação do chimpanzé é essencial não apenas para a biodiversidade, mas também para a 
+                compreensão de nossa própria evolução e comportamento social.</p>
         <li class="gallery-item">
             <a href="https://www.youtube.com/watch?v=vO-7MZFXJpw" target="_blank"> 
                 <img src="https://sdzwildlifeexplorers.org/sites/default/files/2018-07/animal-hero-hamadryas_0.jpg" 
                 alt="Babuino"/>                
             </a>
-            <aside>Babuino</aside> 
+            <aside id="nome">Babuino</aside> 
         </li>
-        <p></p>
+        <p id="descricao">O macaco babuíno, conhecido cientificamente como Papio, é um primata encontrado 
+            em várias partes da África e na Arábia. Com sua distintiva face alongada e nádegas vermelhas, 
+            são primariamente terrestres, habitando savanas, florestas e planaltos. Estes primatas vivem 
+            em grupos hierárquicos liderados por machos dominantes, que protegem o grupo de ameaças e 
+            rivalidades internas. Babuínos têm uma dieta onívora, consumindo uma variedade de alimentos, 
+            desde frutas e sementes até pequenos vertebrados e insetos. Eles também são reconhecidos por 
+            seus comportamentos sociais complexos, incluindo comunicação vocal e gestual para expressar 
+            emoções e coordenar atividades de grupo. Infelizmente, enfrentam ameaças de perda de habitat, 
+            caça e conflitos com humanos em algumas regiões, exigindo medidas de conservação para garantir 
+            sua sobrevivência. Como integrantes importantes dos ecossistemas africanos, os babuínos 
+            desempenham papéis cruciais na manutenção do equilíbrio ecológico e na biodiversidade do continente.</p>
         <li class="gallery-item">
             <a href="https://www.youtube.com/watch?v=NdE7bANJIz0" target="_blank"> 
                 <img src="https://i.natgeofe.com/n/abf58ec8-ac78-4108-adbe-918fa5bda2e5/mountain-gorilla_3x4.jpg" 
                 alt="Gorila"/>                
             </a>
-            <aside>Gorila</aside> 
+            <aside id="nome">Gorila</aside> 
         </li>
-        <p></p>
+        <p id="descricao">O gorila, membro da família dos primatas e conhecido cientificamente como Gorilla, 
+            é um dos maiores primatas do mundo, nativo da África central e ocidental. Reconhecível por sua 
+            pelagem densa e negra, os gorilas vivem em grupos familiares liderados por um macho dominante, 
+            chamado de "prata das costas", que protege o grupo e mantém a coesão social. Com uma dieta 
+            predominantemente vegetariana, alimentam-se principalmente de folhas, frutas e vegetais, passando 
+            a maior parte do tempo em áreas florestais. Os gorilas são criaturas pacíficas, comunicando-se 
+            através de vocalizações, gestos e expressões faciais sutis para manter a coesão do grupo e 
+            resolver conflitos. Infelizmente, enfrentam ameaças significativas devido à perda de habitat, 
+            caça ilegal e doenças transmitidas pelos humanos, exigindo esforços de conservação para proteger 
+            essas magníficas criaturas e garantir sua sobrevivência. Como espécie emblemática, os gorilas 
+            desempenham um papel vital na ecologia das florestas tropicais, contribuindo para a manutenção 
+            do equilíbrio ecológico e da biodiversidade.</p>
         <li class="gallery-item">
             <a href="https://www.youtube.com/watch?v=0fts6x_EE_E" target="_blank"> 
                 <img src="https://images.theconversation.com/files/225151/original/file-20180627-112641-idgmo2.jpg?ixlib=rb-1.1.0&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip" 
                 alt="Orangotango"/>                
             </a>
-            <aside>Orangotango</aside> 
+            <aside id="nome">Orangotango</aside> 
         </li>
-        <p></p>
+        <p id="descricao">O orangotango, conhecido cientificamente como Pongo, é um dos primatas mais emblemáticos
+             do mundo, encontrado apenas nas florestas tropicais da Indonésia e Malásia. Reconhecível por sua 
+             pelagem ruiva e braços longos, são conhecidos por sua inteligência excepcional e habilidades de 
+             ferramentas. Orangotangos são primariamente solitários, exceto durante a criação de filhotes, e 
+             passam a maior parte do tempo nas copas das árvores, onde constroem ninhos elaborados. Com uma 
+             dieta principalmente frugívora, também consomem folhas, cascas e pequenos animais. Infelizmente, 
+             enfrentam sérias ameaças devido à perda de habitat, caça ilegal e comércio ilegal de animais, 
+             levando muitas espécies à beira da extinção. A conservação dos orangotangos é crucial não apenas 
+             para sua própria sobrevivência, mas também para a preservação das florestas tropicais, das quais 
+             são uma parte fundamental, contribuindo para a biodiversidade e o equilíbrio ecológico.</p>
         <li class="gallery-item">
             <a href="https://www.youtube.com/watch?v=CcVGst_aG2Q" target="_blank"> 
                 <img src="https://img.freepik.com/fotos-premium/gibao-de-bochechas-brancas-do-norte_70718-416.jpg" 
                 alt="Gibao"/>                
             </a>
-            <aside>Gibao</aside> 
+            <aside id="nome">Gibao</aside> 
         </li>
+        <p id="descricao">O gibão, também conhecido como siamang, é um macaco encontrado nas florestas 
+            tropicais do sudeste da Ásia, conhecido por seu canto melódico e distinto. Reconhecível por 
+            sua pelagem negra, rosto branco e bolsa gular, os gibões são primariamente arborícolas, passando 
+            a maior parte do tempo nas copas das árvores. Eles formam laços monogâmicos fortes, vivendo em 
+            pares ou em pequenos grupos familiares. Com uma dieta predominantemente herbívora, alimentam-se 
+            de frutas, folhas e brotos. Os gibões são ágeis e habilidosos, utilizando-se de movimentos 
+            acrobáticos para se locomover entre as árvores. Infelizmente, enfrentam ameaças crescentes devido 
+            à perda de habitat, caça e comércio ilegal de animais, colocando em risco sua sobrevivência. 
+            A preservação dos gibões é crucial para a conservação das florestas tropicais do sudeste da 
+            Ásia e para a manutenção do equilíbrio ecológico dessa região.</p>
     </ul>
 
-<footer>
-    <p>© 2024 Macacos SA. Todos os direitos reservados.</p>
-    <nav>
-        <ul>
-            <li><a href="/sobre">Sobre nós</a></li>
-            <li><a href="/contato">Contato</a></li>
-            <li><a href="/politica-de-privacidade">Política de Privacidade</a></li>
-        </ul>
-    </nav>
-    <address>
-        Contato: <a href="macacos@gmail.com">macacos@gmail.com</a>
-    </address>
-</footer>
+    <a href="./consulta.html" target="_blank"> Outros Macacos </a>
 
+    <footer>
+        <p>© 2024 Macacos SA. Todos os direitos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="/sobre">Sobre nós</a></li>
+                <li><a href="/contato">Contato</a></li>
+                <li><a href="/politica-de-privacidade">Política de Privacidade</a></li>
+            </ul>
+        </nav>
+        <address>
+            Contato: <a href="macacos@gmail.com">macacos@gmail.com</a>
+        </address>
+    </footer>
 </body>
 </html>
