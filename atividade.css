@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+.title {
+    margin: 0;
+}
+
+.subtitle {
+    text-align: right;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 0 10px;
+}
+
+section, aside {
+    width: 45%;
+}
+
+.content {
+    padding: 10px;
+}
+
+section {
+    border: 1px solid blue;
+}
+
+.right-section {
+    text-align: right;
+}
+
+.sidebar {
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px dashed green;
+}
+
+
+/* LISTAS */
+
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.list-container ul {
+    width: calc(50% - 5px);
+    padding: 0;
+    list-style: none;
+}
+
+.list-container .dotted-border {
+    border: 2px dotted red;
+    padding: 10px;
+}
+
+.list-container .solid-border {
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+/* ADICIONAIS */
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.image-container img {
+    width: calc(50% - 20px);
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .image-container img {
+        width: calc(100% - 20px);
+    }
+}
