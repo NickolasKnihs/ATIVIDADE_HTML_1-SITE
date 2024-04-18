@@ -19,7 +19,10 @@ function cadastrarUsuario() {
 
     const paragrafo = document.createElement('p');
     // paragrafo.innerText = '<strong>Nickolas Knihs</strong>';
-    paragrafo.innerHTML += `<strong>Nome: </strong> ${nomeCompletoInput.value}`;
+    paragrafo.innerHTML += `<span style="color: red; background-color: green;">${nomeCompletoInput.value} </span> 
+    <span style="color: white; background-color: black;">${dataNascimetnoInput.value} </span> 
+    <span style="color: purple; background-color: yellow;">${emailInput.value} </span> 
+    <span style="color: blue; background-color: gray;">${senhaInput.value} </span>`;
     tabelaCadastroDiv.append(paragrafo);
     console.log(paragrafo);
     
