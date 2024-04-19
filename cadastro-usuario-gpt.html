@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Usuário</title>
+<style>
+    .nome {
+        color: red;
+        background-color: green;
+    }
+    .data-nascimento {
+        color: white;
+        background-color: black;
+    }
+    .email {
+        color: purple;
+        background-color: yellow;
+    }
+    .senha {
+        color: blue;
+        background-color: gray;
+    }
+    /* Estilos para exibir os parágrafos em linha */
+    #tabelaCadastro div {
+        font-size: 0; /* Remove espaços em branco entre os elementos */
+    }
+
+    #tabelaCadastro p {
+        display: inline-block;
+        margin: 0; /* Remove margem entre os parágrafos */
+        font-size: 16px; /* Restaura o tamanho da fonte para os parágrafos */
+    }
+</style>
+</head>
+<body>
+
+<input type="text" id="nomeCompleto" placeholder="Nome Completo">
+<input type="text" id="dataNascimento" placeholder="Data de Nascimento">
+<input type="email" id="email" placeholder="Email">
+<input type="password" id="senha" placeholder="Senha">
+<button onclick="cadastrarUsuario()">Cadastrar</button>
+
+<div id="tabelaCadastro"></div>
+
+<script>
+    var nomeCompletoInput = document.getElementById('nomeCompleto');
+    var dataNascimentoInput = document.getElementById('dataNascimento');
+    var emailInput= document.getElementById('email');
+    var senhaInput = document.getElementById('senha');
+    const tabelaCadastroDiv = document.getElementById('tabelaCadastro');
+
+    function cadastrarUsuario() {
+        const divContainer = document.createElement('div');
+
+        const paragrafoNome = document.createElement('p');
+        paragrafoNome.classList.add('nome');
+        paragrafoNome.innerHTML = `<strong>Nome: </strong>${nomeCompletoInput.value}`;
+        divContainer.appendChild(paragrafoNome);
+
+        const paragrafoDataNascimento = document.createElement('p');
+        paragrafoDataNascimento.classList.add('data-nascimento');
+        paragrafoDataNascimento.innerHTML = `<strong>Data de Nascimento: </strong>${dataNascimentoInput.value}`;
+        divContainer.appendChild(paragrafoDataNascimento);
+
+        const paragrafoEmail = document.createElement('p');
+        paragrafoEmail.classList.add('email');
+        paragrafoEmail.innerHTML = `<strong>Email: </strong>${emailInput.value}`;
+        divContainer.appendChild(paragrafoEmail);
+
+        const paragrafoSenha = document.createElement('p');
+        paragrafoSenha.classList.add('senha');
+        paragrafoSenha.innerHTML = `<strong>Senha: </strong>${senhaInput.value}`;
+        divContainer.appendChild(paragrafoSenha);
+
+        tabelaCadastroDiv.appendChild(divContainer);
+
+        console.log("Usuário cadastrado");
+    }
+</script>
+
+</body>
+</html>
